@@ -24,6 +24,16 @@ func main() {
 
 	// bubleSortDesc(nums)
 	// fmt.Println("Array nums Desc:\n", nums)
+
+	// insertionSortAsc(nums)
+	// fmt.Println("Array nums After Sort:\n", nums)
+
+	// insertionSortDesc(nums)
+	// fmt.Println("Array nums After Sort:\n", nums)
+
 	insertionSort(nums)
-	fmt.Println("Array nums Desc:\n", nums)
+	fmt.Println("Array nums After Sort:\n", nums)
+
+	// quickSort(nums, 0, 19)
+	// fmt.Println("Array nums After Sort:\n", nums)
 }
