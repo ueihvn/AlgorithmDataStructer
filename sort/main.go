@@ -31,9 +31,13 @@ func main() {
 	// insertionSortDesc(nums)
 	// fmt.Println("Array nums After Sort:\n", nums)
 
-	insertionSort(nums)
-	fmt.Println("Array nums After Sort:\n", nums)
+	// insertionSort(nums)
+	// fmt.Println("Array nums After Sort:\n", nums)
 
 	// quickSort(nums, 0, 19)
 	// fmt.Println("Array nums After Sort:\n", nums)
+
+	mergeSort(nums, 0, 19)
+	fmt.Println("Array nums After Sort:\n", nums)
+	fmt.Println("alo", nums)
 }
