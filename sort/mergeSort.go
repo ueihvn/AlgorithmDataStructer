@@ -2,7 +2,7 @@ package main
 
 // call itself 2 time -> binary recursive
 // use recursive to sort 2 sub array have index [right, mid] and [mid+1,right]
-// are seperated by array which have index from left to right
+// are seperated from array which have index from left to right
 func mergeSort(nums []int, left, right int) {
 	// range from left to right have more than 1 element
 	if left < right {
@@ -26,7 +26,7 @@ func merge(nums []int, left, mid, right int) {
 	// track index of slice temp
 	m := 0
 	for !(i > mid && j > right) {
-		if (nums[i] < nums[j] && i <= mid && j <= right) || (j > right) {
+		if (j > right) || (nums[i] < nums[j] && i <= mid && j <= right) {
 			temp[m] = nums[i]
 			i++
 			m++

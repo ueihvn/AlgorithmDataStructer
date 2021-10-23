@@ -12,6 +12,7 @@ func main() {
 	// fmt.Println(isPalinromeNumberString(num))
 	// fmt.Println(isPalinromeNumberRevert(num))
 	// fmt.Println(romanToInt(s))
-	strs := []string{"flower", "flow", "flight"}
-	fmt.Println(longestCommonPrefix(strs))
+	// strs := []string{"flower", "flow", "flight"}
+	// fmt.Println(longestCommonPrefix(strs))
+	fmt.Println(isValidParentheses("{}[]()"))
 }
