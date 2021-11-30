@@ -2,7 +2,7 @@ package search
 
 func BinarySearch(nums []int, num int) int {
 	left, mid, right := 0, 0, len(nums)-1
-	for left < right {
+	for left <= right {
 		mid = (left + right) / 2
 		if nums[mid] == num {
 			return mid
