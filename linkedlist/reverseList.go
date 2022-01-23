@@ -1,22 +1,22 @@
 package main
 
 func reverseList(l LinkedList) LinkedList {
-	if l.head == nil {
+	if l.Head == nil {
 		return l
 	}
-	cur := l.head
+	cur := l.Head
 	res := LinkedList{}
 
 	for cur != nil {
-		temp := res.head
-		res.head = cur
-		// set cur = cur.net before res.head.next
-		// res.head is cur so if res.head change -> cur change
-		//  set cur = cur.net before so cur now != res.head, we can change res.head.next = temp
+		temp := res.Head
+		res.Head = cur
+		// set cur = cur.net before res.Head.Next
+		// res.Head is cur so if res.Head change -> cur change
+		//  set cur = cur.net before so cur now != res.Head, we can change res.Head.Next = temp
 		// don't affect cur
-		cur = cur.next
-		res.head.next = temp
-		res.length++
+		cur = cur.Next
+		res.Head.Next = temp
+		res.Length++
 	}
 
 	return res

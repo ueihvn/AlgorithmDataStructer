@@ -1,34 +1,34 @@
 package main
 
 func mergeTwoLists(l1 LinkedList, l2 LinkedList) LinkedList {
-	templ1 := l1.head
-	templ2 := l2.head
+	templ1 := l1.Head
+	templ2 := l2.Head
 	var res LinkedList
 	var cur *Node
 
 	for !(templ1 == nil && templ2 == nil) {
-		if (templ1 != nil && templ2 != nil && templ1.val < templ2.val) || (templ2 == nil) {
-			if res.head == nil {
-				res.head = &Node{val: templ1.val}
-				cur = res.head
-				res.length++
+		if (templ1 != nil && templ2 != nil && templ1.Val < templ2.Val) || (templ2 == nil) {
+			if res.Head == nil {
+				res.Head = &Node{Val: templ1.Val}
+				cur = res.Head
+				res.Length++
 			} else {
-				cur.next = &Node{val: templ1.val}
-				cur = cur.next
-				res.length++
+				cur.Next = &Node{Val: templ1.Val}
+				cur = cur.Next
+				res.Length++
 			}
-			templ1 = templ1.next
+			templ1 = templ1.Next
 		} else {
-			if res.head == nil {
-				res.head = &Node{val: templ2.val}
-				cur = res.head
-				res.length++
+			if res.Head == nil {
+				res.Head = &Node{Val: templ2.Val}
+				cur = res.Head
+				res.Length++
 			} else {
-				cur.next = &Node{val: templ2.val}
-				cur = cur.next
-				res.length++
+				cur.Next = &Node{Val: templ2.Val}
+				cur = cur.Next
+				res.Length++
 			}
-			templ2 = templ2.next
+			templ2 = templ2.Next
 		}
 	}
 	return res

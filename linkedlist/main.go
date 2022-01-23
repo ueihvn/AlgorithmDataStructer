@@ -12,5 +12,6 @@ func main() {
 	// list.deleteEnd()
 	// list.print()
 	// testMergeTwoLists()
-	testReverseList()
+	// testReverseList()
+	testDeleteDuplicates()
 }

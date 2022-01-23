@@ -9,13 +9,15 @@ func reverseList(head *ListNode) *ListNode {
 	cur := head
 
 	for cur != nil {
+		// add in the begining of linked list
 		temp := res
 		res = cur
+		// update cur
 		cur = cur.Next
+		// res, cur is pointer variables
 		// cur now is different with res
 		// res is old cur
 		// cur is cur.Next
-		// res, cur is pointer variables
 		res.Next = temp
 	}
 	return res

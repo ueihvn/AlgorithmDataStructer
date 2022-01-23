@@ -34,5 +34,7 @@ func main() {
 	// testMySqrt()
 	// testClimbStairs()
 	// testMergeTwoLists()
-	testReverseLists()
+	// testReverseLists()
+	// testDeleteDuplicates()
+	testHasCycle()
 }
